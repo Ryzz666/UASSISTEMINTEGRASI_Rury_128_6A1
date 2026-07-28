@@ -59,8 +59,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     strategy: "jwt",
   },
   callbacks: {
-    async signIn({ user }) {
-      return isAdminEmail(user.email);
+    async signIn({ user, profile }) {
+      return isAdminEmail(user.email ?? profile?.email);
     },
     async jwt({ token, user }) {
       token.isAdmin = isAdminEmail(user?.email ?? token.email);
@@ -68,6 +68,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
     async session({ session, token }) {
       if (session.user) {
+        session.user.email = token.email ?? session.user.email;
         session.user.isAdmin = Boolean(token.isAdmin);
       }
 

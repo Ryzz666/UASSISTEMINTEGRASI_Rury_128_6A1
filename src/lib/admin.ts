@@ -1,9 +1,10 @@
 const fallbackAdminEmail = "olryzskies@gmail.com";
 
 export function getAdminEmails(): string[] {
-  const rawAdminEmails = process.env.ADMIN_EMAILS ?? fallbackAdminEmail;
+  const rawAdminEmails = process.env.ADMIN_EMAILS ?? "";
+  const adminEmails = [rawAdminEmails, fallbackAdminEmail].join(",");
 
-  return rawAdminEmails
+  return adminEmails
     .split(",")
     .map((email) => email.trim().toLowerCase())
     .filter(Boolean);

@@ -6,23 +6,27 @@
 - Local:         http://localhost:3000
 - Network:       http://192.168.1.4:3000
 - Environments: .env
-✓ Ready in 870ms
+✓ Ready in 2.9s
 Creating turbopack project {
   dir: 'C:\\Users\\LENOVO T470S\\Downloads\\kuesioner-app-main',
   testMode: true
 }
 
- GET /login 200 in 1163ms (next.js: 704ms, application-code: 459ms)
- GET /login 200 in 67ms (next.js: 4ms, application-code: 63ms)
- POST /login 303 in 49ms (next.js: 6ms, application-code: 43ms)
- POST /login 303 in 53ms (next.js: 8ms, application-code: 46ms)
- GET /admin 200 in 1172ms (next.js: 101ms, proxy.ts: 225ms, application-code: 847ms)
- GET /api/admin/export 200 in 303ms (next.js: 222ms, application-code: 81ms)
- POST /api/submit 200 in 98ms (next.js: 39ms, application-code: 59ms)
- GET /login 200 in 82ms (next.js: 7ms, application-code: 75ms)
- POST /login 303 in 21ms (next.js: 4ms, application-code: 18ms)
- GET /admin 200 in 338ms (next.js: 7ms, proxy.ts: 14ms, application-code: 316ms)
- GET /api/admin/export 200 in 56ms (next.js: 3ms, application-code: 53ms)
- GET / 200 in 414ms (next.js: 183ms, application-code: 231ms)
- GET /admin 200 in 419ms (next.js: 8ms, proxy.ts: 22ms, application-code: 389ms)
- GET /api/admin/export 200 in 83ms (next.js: 15ms, application-code: 68ms)
+ GET /login 200 in 9.6s (next.js: 7.9s, application-code: 1675ms)
+ GET /login 200 in 263ms (next.js: 31ms, application-code: 232ms)
+ GET /login 200 in 122ms (next.js: 16ms, application-code: 107ms)
+ GET /login 200 in 356ms (next.js: 32ms, application-code: 324ms)
+ POST /login 303 in 401ms (next.js: 21ms, application-code: 381ms)
+ POST /api/submit 200 in 3.8s (next.js: 1755ms, application-code: 2.1s)
+ GET /admin 200 in 2.7s (next.js: 294ms, proxy.ts: 689ms, application-code: 1718ms)
+ GET / 200 in 510ms (next.js: 276ms, application-code: 234ms)
+ GET /login 200 in 163ms (next.js: 12ms, application-code: 150ms)
+ POST /login 303 in 108ms (next.js: 21ms, application-code: 87ms)
+  └─ ƒ <inline action>() in 30ms app/login/page.tsx
+ GET / 200 in 143ms (next.js: 15ms, application-code: 128ms)
+ GET /login 200 in 173ms (next.js: 7ms, application-code: 166ms)
+ POST /login 303 in 47ms (next.js: 5ms, application-code: 42ms)
+  └─ ƒ <inline action>() in 32ms app/login/page.tsx
+ GET /login 200 in 394ms (next.js: 10ms, application-code: 383ms)
+ POST /login 303 in 41ms (next.js: 5ms, application-code: 36ms)
+  └─ ƒ <inline action>() in 26ms app/login/page.tsx

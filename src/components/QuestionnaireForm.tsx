@@ -12,6 +12,7 @@ export default function QuestionnaireForm() {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const form = event.currentTarget;
     setMessage("");
 
     if (!name.trim()) {
@@ -56,7 +57,6 @@ export default function QuestionnaireForm() {
       setFeedback("");
       setImageFile(null);
       setScreenshotFile(null);
-      const form = event.currentTarget;
       form.reset();
     } catch (error) {
       console.error("Submit failed:", error);
